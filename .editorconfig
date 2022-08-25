@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0184: 'Podane wyrażenie wyrażenia „is” nigdy nie ma podanego typu
+dotnet_diagnostic.CS0184.severity = none

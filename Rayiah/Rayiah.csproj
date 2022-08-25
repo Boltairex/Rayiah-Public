@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>Rayiah.Program</StartupObject>
+    <Copyright>Krzysztof "Boltu" Seruś</Copyright>
+    <PackageId>Rayiah Storyteller</PackageId>
+    <Authors>Krzysztof "Boltu" Seruś</Authors>
+    <Company>Infreed Studio</Company>
+    <Product>RayiahBot</Product>
+    <AssemblyName>Rayiah</AssemblyName>
+    <RootNamespace>Rayiah</RootNamespace>
+    <Version>2.1.0</Version>
+    <ApplicationIcon />
+    <Win32Resource />
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Accounts\**" />
+    <Compile Remove="AeriaStories\**" />
+    <Compile Remove="Modules\Commands\AeriaCommands\**" />
+    <Compile Remove="Modules\Commands\EkumenaCommands\**" />
+    <Compile Remove="Creatures\**" />
+    <Compile Remove="Ekumena\**" />
+    <Compile Remove="Galaxy\**" />
+    <Compile Remove="Items\**" />
+    <Compile Remove="Modules\Commands\AeriaCommands\**" />
+    <Compile Remove="Modules\Commands\EkumenaCommands\**" />
+    <Compile Remove="Modules\Commands\Ekumena\**" />
+    <Compile Remove="Modules\Commands\AeriaCommands\**" />
+    <Compile Remove="Modules\Commands\EkumenaCommands\**" />
+    <Compile Remove="Modules\Commands\AeriaCommands\**" />
+    <Compile Remove="Modules\Commands\EkumenaCommands\**" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Accounts\**" />
+    <EmbeddedResource Remove="AeriaStories\**" />
+    <EmbeddedResource Remove="Modules\Commands\AeriaCommands\**" />
+    <EmbeddedResource Remove="Modules\Commands\EkumenaCommands\**" />
+    <EmbeddedResource Remove="Creatures\**" />
+    <EmbeddedResource Remove="Ekumena\**" />
+    <EmbeddedResource Remove="Galaxy\**" />
+    <EmbeddedResource Remove="Items\**" />
+    <EmbeddedResource Remove="Modules\Commands\AeriaCommands\**" />
+    <EmbeddedResource Remove="Modules\Commands\EkumenaCommands\**" />
+    <EmbeddedResource Remove="Modules\Commands\Ekumena\**" />
+    <EmbeddedResource Remove="Modules\Commands\AeriaCommands\**" />
+    <EmbeddedResource Remove="Modules\Commands\EkumenaCommands\**" />
+    <EmbeddedResource Remove="Modules\Commands\AeriaCommands\**" />
+    <EmbeddedResource Remove="Modules\Commands\EkumenaCommands\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Accounts\**" />
+    <None Remove="AeriaStories\**" />
+    <None Remove="Modules\Commands\AeriaCommands\**" />
+    <None Remove="Modules\Commands\EkumenaCommands\**" />
+    <None Remove="Creatures\**" />
+    <None Remove="Ekumena\**" />
+    <None Remove="Galaxy\**" />
+    <None Remove="Items\**" />
+    <None Remove="Modules\Commands\AeriaCommands\**" />
+    <None Remove="Modules\Commands\EkumenaCommands\**" />
+    <None Remove="Modules\Commands\Ekumena\**" />
+    <None Remove="Modules\Commands\AeriaCommands\**" />
+    <None Remove="Modules\Commands\EkumenaCommands\**" />
+    <None Remove="Modules\Commands\AeriaCommands\**" />
+    <None Remove="Modules\Commands\EkumenaCommands\**" />
+    <None Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Managers\Units.cs" />
+    <Compile Remove="Modules\Commands\AtrybutStarego.cs" />
+    <Compile Remove="Modules\Commands\BoardsExperimental.cs" />
+    <Compile Remove="Modules\Commands\CardsAH.cs" />
+    <Compile Remove="Modules\Commands\Dev.cs" />
+    <Compile Remove="Modules\Commands\EkumenaCommands.cs" />
+    <Compile Remove="Modules\Commands\HTTP.cs" />
+    <Compile Remove="Modules\Commands\UnitsBoards.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="3.6.0" />
+    <PackageReference Include="ImageProcessor" Version="2.9.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Modules\MessageCommands\" />
+    <Folder Include="Modules\MessageComponents\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Discord.Extended">
+      <HintPath>..\..\Discord.Extended\Discord.Extended\bin\Debug\netstandard2.0\Discord.Extended.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Rayiah": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {},
+      "distributionName": ""
+    }
+  }
+}

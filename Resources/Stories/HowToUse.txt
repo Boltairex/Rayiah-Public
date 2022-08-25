@@ -1,0 +1,3 @@
+One of the existing txt file will be read by bot after using a command.
+Every line will be sent to specified channel after a period of time.
+Just check it, it's simple.
